@@ -21,3 +21,34 @@ body {
   font-size: 1.6rem;
   font-family: $font_primary;
 }
+
+.nav {
+  background-color: $color_light_blue;
+  height: (15.125em / 2);
+}
+
+.wrap {
+  display: grid;
+  grid-template-columns: [full-start] 1fr repeat(12, [col-start] 8em)  1fr [full-end];
+  grid-template-rows: repeat(2, 67.5em);
+}
+
+.hero {
+  background-color: $color_light_blue;
+  grid-column: full-start / full-end;
+}
+
+.about {
+  background-color: $color_dark_blue;
+  grid-column: full-start / col-start 7;
+}
+
+.photo_gallery {
+  background-color: $color_light_blue;
+  grid-column: col-start 7 / full-end;
+}
+
+.footer {
+  background-color: $color_dark_blue;
+  height: 15.125em;
+}
